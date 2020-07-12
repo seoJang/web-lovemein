@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC
+"-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>		
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.Users" alias="Users" />
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.PrimaryInfo" alias="Pinfo" />
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.AddInfo" alias="Ainfo" />
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.Style" alias="Style" />
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.Ideal" alias="Ideal" />
+		<typeAlias type="bclass.finalproject.lovemein.users.model.vo.AllUsers" alias="AllUsers" />
+		<typeAlias type="bclass.finalproject.lovemein.feed.model.vo.Feed" alias="Feed" />
+		<typeAlias type="bclass.finalproject.lovemein.likes.model.vo.Likes" alias="Likes" />
+		<typeAlias type="bclass.finalproject.lovemein.feed.model.vo.FeedReply" alias="FeedReply" />
+		<typeAlias type="bclass.finalproject.lovemein.payment.model.vo.Payment" alias="Payment" />
+		<typeAlias type="bclass.finalproject.lovemein.feed.model.vo.FeedModiReply" alias="FeedModiReply" />
+		<typeAlias type="bclass.finalproject.lovemein.feed.model.vo.FeedLike" alias="FeedLike" />
+		<typeAlias type="bclass.finalproject.lovemein.likes.model.vo.TargetLikeCheck" alias="TargetLikeCheck" />
+		<typeAlias type="bclass.finalproject.lovemein.admin.model.vo.Notice" alias="Notice"/>
+		<typeAlias type="bclass.finalproject.lovemein.admin.model.vo.Report" alias="Report"/>
+		<typeAlias type="bclass.finalproject.lovemein.admin.model.vo.UserReport" alias="UserReport"/>
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.Talk" alias="Talk" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.TalkChat" alias="TalkChat" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.Chat" alias="Chat" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.TalkMission" alias="TalkMission" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.TalkPartner" alias="TalkPartner" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.TalkReport" alias="TalkReport" />
+		<typeAlias type="bclass.finalproject.lovemein.talk.model.vo.Search" alias="Search" />
+		<typeAlias type="bclass.finalproject.lovemein.match.model.vo.Match" alias="Match" />	
+		<typeAlias type="bclass.finalproject.lovemein.recent_search.vo.RecentSearch" alias="RecentSearch" />
+  </typeAliases>
+
+	<mappers>
+		<mapper resource="mappers/users-mapper.xml" />
+		<mapper resource="mappers/feed-mapper.xml" />
+		<mapper resource="mappers/payment-mapper.xml" />
+   		 <mapper resource="mappers/likes-mapper.xml" />
+     	<mapper resource="mappers/admin-mapper.xml" />
+     	<mapper resource="mappers/talk-mapper.xml" />
+     	<mapper resource="mappers/match-mapper.xml" />
+     	
+	</mappers>
+	
+	
+</configuration>
